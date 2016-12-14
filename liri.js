@@ -52,10 +52,10 @@ inquirer.prompt([
 		} else if (user.technology === 'OMDB') {
 			var searchReady = user.search.replace(/ /g,'+');
 			// Then run a request to the OMDB API with the movie specified
-			request('http://www.omdbapi.com/?t=' + searchReady + '&y=&plot=full&tomatoes=true&r=json', function(error, response, body) {
+			request('http://www.omdbapi.com/?t=' + searchReady + '&y=&plot=full&tomatoes=true&r=json', function(err, response, body) {
 
 			  // If the request is successful (i.e. if the response status code is 200)
-			  if (!error && response.statusCode === 200) {
+			  if (!err && response.statusCode === 200) {
 
 			    // Parse the body of the site and recover just the imdbRating
 			    // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
@@ -72,10 +72,10 @@ inquirer.prompt([
 			});
 
 		} else if (user.technology === 'Twitter') {
-			var params = {screen_name: 'nodejs'};
-			
-			client.get('statuses/user_timeline', params, function(error, tweets, response) {
-			  if (!error) {
+			var params = {screen_name: 'a_ashbeck', count: 20};
+
+			client.get('statuses/user_timeline', params, function(err, tweets, response) {
+			  if (!err) {
 			    console.log(tweets);
 			  }
 			});
