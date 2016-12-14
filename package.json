@@ -4,7 +4,6 @@
   "description": "Homework 8",
   "main": "liri.js",
   "dependencies": {
-    "escape-string-regexp": "^1.0.5",
     "fs": "0.0.1-security",
     "inquirer": "^2.0.0",
     "request": "^2.79.0",
