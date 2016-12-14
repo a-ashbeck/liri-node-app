@@ -39,11 +39,13 @@ inquirer.prompt([
 			        console.log('Error occurred: ' + err);
 			        return;
 			    }
-			 		console.log(data)
-			   //  console.log('Artist(s): ' + data. );
-				  // console.log('The song\'s name: ' + data. );
-				  // console.log('A preview link of the song from Spotify: ' + data. );
-				  // console.log('The album that the song is from: ' + data. );
+
+			    var track = data.tracks.items[0];
+
+			    console.log('Artist(s): ' + track.artists[0].name);
+				  console.log('The song\'s name: ' + track.name);
+				  console.log('A preview link of the song from Spotify: ' + track.preview_url);
+				  console.log('The album that the song is from: ' + track.album.name);
  
 			});
 
