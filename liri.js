@@ -89,6 +89,17 @@ inquirer.prompt([
 			});
 		}
 
+		console.log('');
+		console.log('');
+		console.log('( •_•)');
+		console.log('( •_•)>⌐■-■');
+		console.log('(⌐■_■)');
+		console.log('');
+		console.log('');
+		console.log('Here\'s the goods, bruh:');
+		console.log('');
+		console.log('');
+
 	// If the user does not confirm, then a message is provided and the program quits. 
 	}
 
@@ -96,7 +107,9 @@ inquirer.prompt([
 
 		console.log('');
 		console.log('');
-		console.log('Later, bruh.');
+		console.log('(╯°□°）╯︵ ┻━┻');
+		console.log('');
+		console.log('Later, bruh. ಠ_ಠ');
 		console.log('');
 		console.log('');
 
