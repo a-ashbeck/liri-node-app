@@ -1,5 +1,5 @@
 # liri-node-app
-Homework 8 for the Northwestern Coding Boot Camp. LIRI is a SIRI-like personal assistant that uses typed commands via a CLI.
+Homework 8 for the Northwestern Coding Boot Camp. LIRI is a SIRI-like personal assistant that uses typed commands via a CLI using node.js.
 
 ## Setup
 You will need to add a `log.txt` file to your repo when you pull it down. Keep it top level. You will also need a `keys.js` file where you keep your Twitter keys.
